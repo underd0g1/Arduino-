@@ -1,0 +1,36 @@
+OLED I2C 128x64 display 
+by Underd0g
+
+
+Arduino uno R1
+~50% mem usage - clock 
+~15% mem usage - oled text display
+################################33
+Wiring guide - Tested on Arduino Uno only!
+
+OLED          UNO
+####          ###
+GND           GND
+VCC           3.3V
+SCL           SCL
+SDA           SDA
+
+RTC           UNO
+###           ###
+GND           GND
+VCC           5.0V
+SCL           Aux4
+SDA           Aux5
+
+You Must download the AdaFruit GFX library along with the sparkfun micro oled library to support the .ino files!
+
+Clock ino
+#########
+	Select what type of wiring you need (SPI or I2C)
+	Setup for I2C by default, but can change by commenting out the I2C line and uncommenting the SPI line in oled.ino   		file.
+helloworld.ino
+##############
+	Just wire correctly and upload the .ino file to the arduino!
+	It is a test to see that you wired the oled correctly.
+	displays hello world to the screen, you can modify it to say whatever you want!
+
